@@ -6,7 +6,9 @@ import Hero from "./components/hero";
 import Gallery from "./components/gallery";
 import Features from "./components/features";
 import Footer from "./components/footer";
-import AuthForm from "./components/authForm";
+import Login from "./components/login";
+import Register from "./components/register";
+
 import "./App.css";
 
 function App() {
@@ -26,9 +28,9 @@ function App() {
             </>
           }
         />
-
         {/* Login Page */}
-        <Route path="/login" element={<AuthForm />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
       </Routes>
     </BrowserRouter>
   );
